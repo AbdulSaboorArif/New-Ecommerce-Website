@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Image as LucideImage } from "lucide-react";
+
 
 export default function Hero() {
   return (

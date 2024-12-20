@@ -1,5 +1,5 @@
 
-import Link from "next/link"
+
 export default function Footer() {
   return (
    <footer className="w-full max-w-[1440px] mx-auto px-4 py-12 md:py-16">
