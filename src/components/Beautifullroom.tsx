@@ -34,7 +34,7 @@ export default function BeautifullRoom(){
 
             {/* Second Image */}
             <Image 
-            src="/image-18.png" 
+            src="/image-18..png" 
             alt={"This is second image "}
             width={372}
             height={486}
