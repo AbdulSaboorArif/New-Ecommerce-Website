@@ -10,7 +10,7 @@ export default function Header(){
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return(
-      <header className="w-full max-w-[1440px] h-auto sm:h-[100px] mx-auto borde-2 border-red-700">
+      <header className="w-full max-w-[1440px] h-auto sm:h-[100px] mx-auto ">
       <div className="w-full max-w-[1286px] min-h-[41px] mx-auto my-4 md:my-[25px] flex flex-wrap justify-between items-center px-2 lg:px-[20px]">
         {/* Logo */}
         <div className="flex items-center gap-2">

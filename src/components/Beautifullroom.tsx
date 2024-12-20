@@ -4,7 +4,7 @@ export default function BeautifullRoom(){
     return(
         <>
           {/* Best Room  */}
-     <section className="w-full max-w-[1440px] mx-auto bg-[#FCF8F3] overflow-hidden border-2 border-red-700">
+     <section className="w-full max-w-[1440px] mx-auto bg-[#FCF8F3] overflow-hidden ">
         <div className="relative min-h-[670px] flex flex-col lg:flex-row">
         {/* Left Portion */}
           <div className="w-full lg:w-[40%] p-8  flex items-center z-10">
