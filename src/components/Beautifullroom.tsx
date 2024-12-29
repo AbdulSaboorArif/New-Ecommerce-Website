@@ -1,10 +1,14 @@
 import Image from "next/image"
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel"
+
 
 export default function BeautifullRoom(){
     return(
         <>
+        
           {/* Best Room  */}
-     <section className="w-full max-w-[1440px] mx-auto bg-[#FCF8F3] overflow-hidden ">
+          <section className="w-full max-w-[1440px] mx-auto bg-[#FCF8F3] overflow-hidden border-2 border-red-700">
         <div className="relative min-h-[670px] flex flex-col lg:flex-row">
         {/* Left Portion */}
           <div className="w-full lg:w-[40%] p-8  flex items-center z-10">
@@ -34,7 +38,7 @@ export default function BeautifullRoom(){
 
             {/* Second Image */}
             <Image 
-            src="/image-18..png" 
+            src="/image-18.png" 
             alt={"This is second image "}
             width={372}
             height={486}
@@ -50,7 +54,6 @@ export default function BeautifullRoom(){
           </div>
         </div>
     </section> 
- 
 
     </>
     )

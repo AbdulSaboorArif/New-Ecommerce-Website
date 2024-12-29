@@ -1,5 +1,6 @@
 'use client'
 
+
 import Link from 'next/link'
 import Image from 'next/image'
 import { Search, Heart, ShoppingCart, User, Menu, X } from 'lucide-react'
@@ -10,7 +11,7 @@ export default function Header(){
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return(
-      <header className="w-full max-w-[1440px] h-auto sm:h-[100px] mx-auto ">
+      <header className="w-full max-w-[1440px] h-auto sm:h-[100px] mx-auto borde-2 border-red-700">
       <div className="w-full max-w-[1286px] min-h-[41px] mx-auto my-4 md:my-[25px] flex flex-wrap justify-between items-center px-2 lg:px-[20px]">
         {/* Logo */}
         <div className="flex items-center gap-2">
@@ -38,10 +39,10 @@ export default function Header(){
         <nav className={`${isMenuOpen ? 'flex' : 'hidden'} md:flex w-full md:w-auto order-3 md:order-none`}>
           <ul className="">
             <li className="flex flex-col md:flex-row gap-4 md:gap-8 w-full md:w-auto mt-4 md:mt-0">
-              <Link href="/" className="text-base block py-2 md:py-0 hover:text-primary transition-colors">Home</Link>
-              <Link href="/" className="text-base block py-2 md:py-0 hover:text-primary transition-colors">Shop</Link>
-              <Link href="/" className="text-base block py-2 md:py-0 hover:text-primary transition-colors">Blog</Link>
-              <Link href="/" className="text-base block py-2 md:py-0 hover:text-primary transition-colors">Contact</Link>
+              <Link href="/home" className="text-base block py-2 md:py-0 hover:text-primary transition-colors">Home</Link>
+              <Link href="./Shop" className="text-base block py-2 md:py-0 hover:text-primary transition-colors">Shop</Link>
+              <Link href="" className="text-base block py-2 md:py-0 hover:text-primary transition-colors">Blog</Link>
+              <Link href="./Contact" className="text-base block py-2 md:py-0 hover:text-primary transition-colors">Contact</Link>
             </li>
       
           </ul>
@@ -66,6 +67,7 @@ export default function Header(){
     </header>
   )
 }
+
 
 
 
