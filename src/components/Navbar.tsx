@@ -1,13 +1,14 @@
 'use client'
-
-
 import Link from 'next/link'
 import Image from 'next/image'
 import { Search, Heart, ShoppingCart, User, Menu, X } from 'lucide-react'
 import { useState } from 'react'
+import { useSelector } from 'react-redux';
+import { RootState } from '../app/redux/Store';
 
 export default function Header(){
 
+  const cart = useSelector((state: RootState) => state.cart);
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return(
@@ -39,9 +40,9 @@ export default function Header(){
         <nav className={`${isMenuOpen ? 'flex' : 'hidden'} md:flex w-full md:w-auto order-3 md:order-none`}>
           <ul className="">
             <li className="flex flex-col md:flex-row gap-4 md:gap-8 w-full md:w-auto mt-4 md:mt-0">
-              <Link href="/home" className="text-base block py-2 md:py-0 hover:text-primary transition-colors">Home</Link>
+              <Link href="/" className="text-base block py-2 md:py-0 hover:text-primary transition-colors">Home</Link>
               <Link href="./Shop" className="text-base block py-2 md:py-0 hover:text-primary transition-colors">Shop</Link>
-              <Link href="" className="text-base block py-2 md:py-0 hover:text-primary transition-colors">Blog</Link>
+              <Link href="./Blog" className="text-base block py-2 md:py-0 hover:text-primary transition-colors">Blog</Link>
               <Link href="./Contact" className="text-base block py-2 md:py-0 hover:text-primary transition-colors">Contact</Link>
             </li>
       

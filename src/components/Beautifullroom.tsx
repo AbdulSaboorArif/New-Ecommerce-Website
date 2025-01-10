@@ -21,7 +21,7 @@ export default function BeautifullRoom(){
           {/* Right-Portion */}
           <div className="relative flex flex-col lg:flex-row mx-auto py-10 lg:py-8 gap-3">
             {/* First Image */}
-            <Image src="/image-11.png" alt={"This is first image "}
+            <Image src="/image-17.png" alt={"This is first image "}
             width={404}
             height={582}
             className="w-[404px] h-[582px] object-cover z-10"
@@ -38,7 +38,7 @@ export default function BeautifullRoom(){
 
             {/* Second Image */}
             <Image 
-            src="/image-18.png" 
+            src="/image-15.png" 
             alt={"This is second image "}
             width={372}
             height={486}
