@@ -3,7 +3,7 @@
 import Image from "next/image"
 import { useState } from "react"
 import { Star } from 'lucide-react'
-import Link from "next/link"
+
 
 interface ProductData {
   title: string

@@ -70,7 +70,9 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
               Shop
             </Link>
             <span className="text-sm">{">"}</span>
-            <span className="text-black truncate max-w-[200px]">{data.title}</span>
+            <span className="text-black truncate max-w-[200px]">
+              {data.title}
+            </span>
           </div>
         </div>
       </div>
@@ -117,11 +119,20 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
         {/* Content Section */}
         <div className="space-y-4 sm:space-y-6">
           <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-            Embodying the raw, wayward spirit of rock 'n' roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.
+            Embodying the raw wayward spirit of rock roll the Kilburn portable
+            active stereo speaker takes the unmistakable look and sound of
+            Marshall unplugs the chords and takes the show on the road.
           </p>
-          
+
           <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-            Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel.
+            Weighing in under 7 pounds the Kilburn is a lightweight piece of
+            vintage styled engineering. Setting the bar as one of the loudest
+            speakers in its class, the Kilburn is a compact stout-hearted hero
+            with a well balanced audio which boasts a clear midrange and
+            extended highs for a sound that is both articulate and pronounced.
+            The analogue knobs allow you to fine tune the controls to your
+            personal preferences while the guitar influenced leather strap
+            enables easy and stylish travel.
           </p>
 
           {/* Image Grid */}
@@ -136,7 +147,7 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
               />
             </div>
             <div className="bg-[#FBF9F9] rounded-lg p-3 sm:p-6">
-              <Image 
+              <Image
                 src="/image-24.png"
                 alt="Product view 2"
                 className="w-full h-auto object-cover"
