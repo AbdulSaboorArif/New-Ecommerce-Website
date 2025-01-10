@@ -3,12 +3,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Search, Heart, ShoppingCart, User, Menu, X } from 'lucide-react'
 import { useState } from 'react'
-// import { useSelector } from 'react-redux';
-// import { RootState } from '../app/redux/Store';
+
 
 export default function Header(){
 
-  // const cart = useSelector((state: RootState) => state.cart);
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return(
